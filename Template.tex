@@ -1,0 +1,91 @@
+\documentclass{llncs}
+%
+%\documentclass[a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[center]{subfigure}
+\usepackage{amssymb}
+\usepackage{graphicx,amsmath} % Add all your packages here
+\usepackage{subfigure}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}
+\renewcommand{\algorithmicensure}{ \textbf{Output:}}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+%页眉页脚
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\bfseries 一课创业策划书}
+\lfoot{From:ike team}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancypagestyle{plain}{
+  \pagestyle{fancy}
+}
+
+%\usepackage{titlesec}
+%公式编号含章节号
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\makeatletter
+    \renewcommand{\thefigure}{\ifnum \c@chapter>\z@ \thechapter-\fi \@arabic\c@figure}
+    \renewcommand{\thetable}{\ifnum \c@chapter>\z@ \thechapter-\fi \@arabic\c@table}
+\makeatother
+%章节号中文化
+%\renewcommand\thesection{\chinese{section}、}
+%\renewcommand\thesubsection{（\chinese{subsection}）}
+%\renewcommand\thesubsubsection{\arabic{subsubsection}}
+%\usepackage\numberwithin{equation}{section}
+%\titlespacing*{\section} {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\begin{document}
+\title{一课创业策划书}
+\author{  }
+
+\includepdf{data/cover.pdf}
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+%\mainmatter
+%book1
+%\include{data/industry_situations}%行业情况
+%\include{data/market_scenarios}%市场方案
+%\include{data/product_operation}%产品运营
+%\include{data/research_development}%研发概况
+%\include{data/company}%公司
+%\include{data/company_administration}%公司管理概况
+%\include{data/return_investment}%投资回报
+%\include{data/financial_plan}%融资计划
+%\include{data/risk}%风险概述
+%\include{data/schedule}%进度表
+%book2
+\include{newdata/abstract}%摘要
+\include{newdata/market_and_industry_situations}%市场行业综述
+\include{newdata/team_advantage}%团队优势
+\include{newdata/product_introduction}%产品详细介绍
+\include{newdata/company}%公司介绍
+\include{newdata/financial_plan}%融资计划
+\include{newdata/return_investment}%投资回报
+
+\newpage
+\end{document}
