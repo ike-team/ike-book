@@ -26,3 +26,8 @@ bin-release/
 *.xlsx
 *.zip
 *.vsdx
+Template.log
+Template.out
+Template.pdf
+Template.synctex
+Template.toc
